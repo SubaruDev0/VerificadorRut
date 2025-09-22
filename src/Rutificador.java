@@ -52,7 +52,6 @@ public class Rutificador {
                             break;
                         }
                     }
-                    
                     // Si es un RUT de testeo, no se acepta
                     if (esRutTesteo) {
                         System.out.println("RUT de testeo detectado. Ingrese otro.");
@@ -78,8 +77,7 @@ public class Rutificador {
                     } else {
                         System.out.println("Su RUT NO es valido (" + rutString + "-" + dvIngresado +
                                 "). DV correcto: " + dvCalculado);
-                    }
-                    
+                    }  
                 } catch (NumberFormatException e) {
                     System.out.println("RUT invalido en la parte numerica. Intente nuevamente.");
                 } catch (IllegalArgumentException e) {
